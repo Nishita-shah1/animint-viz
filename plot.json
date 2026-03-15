@@ -1,0 +1,260 @@
+{
+ "geoms": {
+ "geom1_point_scatter": {
+ "geom": "point",
+"classed": "geom1_point_scatter",
+"aes": {
+ "x": "math",
+"y": "science",
+"colour": "grade",
+"clickSelects": "grade",
+"showSelected1": "grade" 
+},
+"params": {
+ "na.rm": false,
+"na.rm": false,
+"size":        6,
+"alpha":      0.8,
+"clickSelects": "grade",
+"showSelected": "grade",
+"help_clickSelects": "grade",
+"help_showSelected": "grade" 
+},
+"types": {
+ "colour": "rgb",
+"x": "numeric",
+"y": "numeric",
+"clickSelects": "linetype",
+"showSelected1": "linetype",
+"PANEL": "integer",
+"group": "character",
+"fill": "rgb" 
+},
+"chunk_order": [],
+"nest_order": [
+ "showSelected1" 
+],
+"subset_order": [
+ "showSelected1" 
+],
+"chunks": 1,
+"total": 1 
+} 
+},
+"selectors": {
+ "grade": {
+ "type": "multiple",
+"legend": true,
+"is.variable.value": false,
+"clickSelects": true,
+"showSelected": true,
+"selected": [ "B", "A", "C" ],
+"levels": [ "B", "A", "C" ],
+"update": [
+ "geom1_point_scatter" 
+] 
+} 
+},
+"plots": {
+ "scatter": {
+ "panel_margin_lines":     0.27,
+"legend": {
+ "grade": {
+ "guide": "legend",
+"geoms": "point",
+"title": "grade",
+"class": "grade",
+"selector": "grade",
+"is_discrete": true,
+"legend_type": "colour",
+"text_size": "9.6pt",
+"title_size": "12pt",
+"entries": [
+ {
+ "pointcolour": "#F8766D",
+"pointshape":       19,
+"pointsize":        6,
+"pointalpha":      0.8,
+"pointstroke":      0.5,
+"label": "A" 
+},
+{
+ "pointcolour": "#00BA38",
+"pointshape":       19,
+"pointsize":        6,
+"pointalpha":      0.8,
+"pointstroke":      0.5,
+"label": "B" 
+},
+{
+ "pointcolour": "#619CFF",
+"pointshape":       19,
+"pointsize":        6,
+"pointalpha":      0.8,
+"pointstroke":      0.5,
+"label": "C" 
+} 
+] 
+} 
+},
+"strips": {
+ "top": [
+ "" 
+],
+"right": [
+ "" 
+],
+"n": {
+ "top":        0,
+"right":        0 
+} 
+},
+"layout": {
+ "PANEL": [ 1 ],
+"ROW": [ 1 ],
+"COL": [ 1 ],
+"SCALE_X": [ 1 ],
+"SCALE_Y": [ 1 ],
+"AXIS_X": [ true ],
+"AXIS_Y": [ true ],
+"coord_fixed": [ false ],
+"width_proportion": [        1 ],
+"height_proportion": [        1 ] 
+},
+"panel_background": {
+ "fill": "#FFFFFF",
+"colour": "transparent",
+"size":      0.5,
+"linetype":        1 
+},
+"panel_border": {
+ "fill": "transparent",
+"colour": "#7F7F7F",
+"size":      0.5,
+"linetype":        1 
+},
+"grid_major": {
+ "colour": "#E5E5E5",
+"size":      0.2,
+"linetype":        1,
+"lineend": "butt",
+"loc": {
+ "x": [
+ [
+       60,
+      70,
+      80,
+      90 
+] 
+],
+"y": [
+ [
+       70,
+      80,
+      90 
+] 
+] 
+} 
+},
+"grid_minor": {
+ "colour": "#FAFAFA",
+"size":      0.5,
+"linetype":        1,
+"lineend": "butt",
+"loc": {
+ "x": [
+ [
+       55,
+      60,
+      65,
+      70,
+      75,
+      80,
+      85,
+      90,
+      95 
+] 
+],
+"y": [
+ [
+       65,
+      70,
+      75,
+      80,
+      85,
+      90,
+      95 
+] 
+] 
+} 
+},
+"axis1": {
+ "x": [
+       60,
+      70,
+      80,
+      90 
+],
+"xlab": [
+ "60",
+"70",
+"80",
+"90" 
+],
+"xrange": [       53,       97 ],
+"xline": false,
+"xticks": true,
+"y": [
+       70,
+      80,
+      90 
+],
+"ylab": [
+ "70",
+"80",
+"90" 
+],
+"yrange": [     63.4,     98.6 ],
+"yline": false,
+"yticks": true 
+},
+"xtitle": "Math Score",
+"strip_text_xsize": "12pt",
+"xsize": "12pt",
+"xangle":        0,
+"xanchor": "middle",
+"ytitle": "Science Score",
+"strip_text_ysize": "12pt",
+"ysize": "12pt",
+"yangle":        0,
+"yanchor": "end",
+"xlabs": [
+ "60",
+"70",
+"80",
+"90" 
+],
+"ylabs": [
+ "70",
+"80",
+"90" 
+],
+"title": "Student Marks: Math vs Science",
+"title_size": "14.4pt",
+"options": {
+ "width":      400,
+"height":      400 
+},
+"span": {
+ "rowspan": null,
+"colspan": null,
+"last_in_row": null 
+},
+"geoms": [
+ "geom1_point_scatter" 
+] 
+} 
+},
+"source": "https://github.com/Nishita-shah1/animint/blob/main/simple-plot.R",
+"title": "Student Marks Interactive Plot" 
+}
