@@ -90,7 +90,7 @@
  "na.rm": false,
 "na.rm": false,
 "colour": "#E76F51",
-"size":        5,
+"size":        6,
 "showSelected": "iteration",
 "help_showSelected": "iteration" 
 },
@@ -111,9 +111,48 @@
 "chunks": 1,
 "total": 1 
 },
-"geom5_line_landscape": {
+"geom5_text_gradient": {
+ "geom": "text",
+"classed": "geom5_text_gradient",
+"aes": {
+ "x": "iteration",
+"y": "y_grad_label",
+"label": "text_grad",
+"showSelected1": "iteration" 
+},
+"params": {
+ "parse": false,
+"check_overlap": false,
+"na.rm": false,
+"na.rm": false,
+"vjust":        0,
+"size":      3.5,
+"colour": "#E76F51",
+"showSelected": "iteration",
+"help_showSelected": "iteration",
+"anchor": "middle" 
+},
+"types": {
+ "x": "numeric",
+"y": "numeric",
+"label": "character",
+"showSelected1": "integer",
+"PANEL": "integer",
+"group": "character" 
+},
+"chunk_order": [],
+"nest_order": [
+ "showSelected1" 
+],
+"subset_order": [
+ "showSelected1" 
+],
+"chunks": 1,
+"total": 1 
+},
+"geom6_line_landscape": {
  "geom": "line",
-"classed": "geom5_line_landscape",
+"classed": "geom6_line_landscape",
 "aes": {
  "x": "x",
 "y": "loss" 
@@ -136,9 +175,35 @@
 "chunks": 1,
 "total": 1 
 },
-"geom6_segment_landscape": {
+"geom7_point_landscape": {
+ "geom": "point",
+"classed": "geom7_point_landscape",
+"aes": {
+ "x": "x",
+"y": "loss" 
+},
+"params": {
+ "na.rm": false,
+"na.rm": false,
+"colour": "#2A9D8F",
+"size":        2,
+"alpha":      0.3 
+},
+"types": {
+ "x": "numeric",
+"y": "numeric",
+"PANEL": "integer",
+"group": "character" 
+},
+"chunk_order": [],
+"nest_order": [],
+"subset_order": [],
+"chunks": 1,
+"total": 1 
+},
+"geom8_segment_landscape": {
  "geom": "segment",
-"classed": "geom6_segment_landscape",
+"classed": "geom8_segment_landscape",
 "aes": {
  "x": "x_start",
 "y": "y_start",
@@ -180,9 +245,9 @@
 "chunks": 1,
 "total": 1 
 },
-"geom7_point_landscape": {
+"geom9_point_landscape": {
  "geom": "point",
-"classed": "geom7_point_landscape",
+"classed": "geom9_point_landscape",
 "aes": {
  "x": "x",
 "y": "loss",
@@ -192,7 +257,7 @@
  "na.rm": false,
 "na.rm": false,
 "colour": "#2A9D8F",
-"size":        5,
+"size":        7,
 "showSelected": "iteration",
 "help_showSelected": "iteration" 
 },
@@ -213,9 +278,48 @@
 "chunks": 1,
 "total": 1 
 },
-"geom8_tallrect_loss": {
+"geom10_text_landscape": {
+ "geom": "text",
+"classed": "geom10_text_landscape",
+"aes": {
+ "x": "x_label",
+"y": "y_loss_label",
+"label": "text_land",
+"showSelected1": "iteration" 
+},
+"params": {
+ "parse": false,
+"check_overlap": false,
+"na.rm": false,
+"na.rm": false,
+"vjust":        0,
+"size":      3.5,
+"colour": "#2A9D8F",
+"showSelected": "iteration",
+"help_showSelected": "iteration",
+"anchor": "start" 
+},
+"types": {
+ "x": "numeric",
+"y": "numeric",
+"label": "character",
+"showSelected1": "integer",
+"PANEL": "integer",
+"group": "character" 
+},
+"chunk_order": [],
+"nest_order": [
+ "showSelected1" 
+],
+"subset_order": [
+ "showSelected1" 
+],
+"chunks": 1,
+"total": 1 
+},
+"geom11_tallrect_loss": {
  "geom": "tallrect",
-"classed": "geom8_tallrect_loss",
+"classed": "geom11_tallrect_loss",
 "aes": {
  "xmin": "iteration - 0.5",
 "xmax": "iteration + 0.5",
@@ -241,9 +345,9 @@
 "chunks": 1,
 "total": 1 
 },
-"geom9_line_loss": {
+"geom12_line_loss": {
  "geom": "line",
-"classed": "geom9_line_loss",
+"classed": "geom12_line_loss",
 "aes": {
  "x": "iteration",
 "y": "loss" 
@@ -266,9 +370,9 @@
 "chunks": 1,
 "total": 1 
 },
-"geom10_point_loss": {
+"geom13_point_loss": {
  "geom": "point",
-"classed": "geom10_point_loss",
+"classed": "geom13_point_loss",
 "aes": {
  "x": "iteration",
 "y": "loss" 
@@ -291,9 +395,9 @@
 "chunks": 1,
 "total": 1 
 },
-"geom11_point_loss": {
+"geom14_point_loss": {
  "geom": "point",
-"classed": "geom11_point_loss",
+"classed": "geom14_point_loss",
 "aes": {
  "x": "iteration",
 "y": "loss",
@@ -303,13 +407,52 @@
  "na.rm": false,
 "na.rm": false,
 "colour": "#E9C46A",
-"size":        5,
+"size":        6,
 "showSelected": "iteration",
 "help_showSelected": "iteration" 
 },
 "types": {
  "y": "numeric",
 "x": "numeric",
+"showSelected1": "integer",
+"PANEL": "integer",
+"group": "character" 
+},
+"chunk_order": [],
+"nest_order": [
+ "showSelected1" 
+],
+"subset_order": [
+ "showSelected1" 
+],
+"chunks": 1,
+"total": 1 
+},
+"geom15_text_loss": {
+ "geom": "text",
+"classed": "geom15_text_loss",
+"aes": {
+ "x": "iteration",
+"y": "y_loss_label",
+"label": "text_loss",
+"showSelected1": "iteration" 
+},
+"params": {
+ "parse": false,
+"check_overlap": false,
+"na.rm": false,
+"na.rm": false,
+"vjust":        0,
+"size":      3.5,
+"colour": "#E9C46A",
+"showSelected": "iteration",
+"help_showSelected": "iteration",
+"anchor": "middle" 
+},
+"types": {
+ "y": "numeric",
+"x": "numeric",
+"label": "character",
 "showSelected1": "integer",
 "PANEL": "integer",
 "group": "character" 
@@ -341,10 +484,13 @@
 "update": [
  "geom1_tallrect_gradient",
 "geom4_point_gradient",
-"geom6_segment_landscape",
-"geom7_point_landscape",
-"geom8_tallrect_loss",
-"geom11_point_loss" 
+"geom5_text_gradient",
+"geom8_segment_landscape",
+"geom9_point_landscape",
+"geom10_text_landscape",
+"geom11_tallrect_loss",
+"geom14_point_loss",
+"geom15_text_loss" 
 ] 
 } 
 },
@@ -475,7 +621,7 @@
 "4",
 "6" 
 ],
-"yrange": [ -0.3067323, 6.441381 ],
+"yrange": [ -0.3167323, 6.651381 ],
 "yline": false,
 "yticks": true 
 },
@@ -517,7 +663,8 @@
  "geom1_tallrect_gradient",
 "geom2_line_gradient",
 "geom3_point_gradient",
-"geom4_point_gradient" 
+"geom4_point_gradient",
+"geom5_text_gradient" 
 ] 
 },
 "landscape": {
@@ -577,10 +724,9 @@
 "y": [
  [
         0,
-       2,
-       4,
-       6,
-       8 
+     2.5,
+       5,
+     7.5 
 ] 
 ] 
 } 
@@ -601,21 +747,21 @@
      1.5,
        2,
      2.5,
-       3 
+       3,
+     3.5 
 ] 
 ],
 "y": [
  [
-       -1,
+    -1.25,
        0,
-       1,
-       2,
-       3,
-       4,
+    1.25,
+     2.5,
+    3.75,
        5,
-       6,
-       7,
-       8 
+    6.25,
+     7.5,
+    8.75 
 ] 
 ] 
 } 
@@ -635,24 +781,22 @@
 "2",
 "3" 
 ],
-"xrange": [     -1.2,      3.2 ],
+"xrange": [   -1.225,    3.725 ],
 "xline": false,
 "xticks": true,
 "y": [
         0,
-       2,
-       4,
-       6,
-       8 
+     2.5,
+       5,
+     7.5 
 ],
 "ylab": [
- "0",
-"2",
-"4",
-"6",
-"8" 
+ "0.0",
+"2.5",
+"5.0",
+"7.5" 
 ],
-"yrange": [   -1.975,    8.475 ],
+"yrange": [   -2.025,    9.525 ],
 "yline": false,
 "yticks": true 
 },
@@ -674,11 +818,10 @@
 "3" 
 ],
 "ylabs": [
- "0",
-"2",
-"4",
-"6",
-"8" 
+ "0.0",
+"2.5",
+"5.0",
+"7.5" 
 ],
 "title": "Loss Landscape",
 "title_size": "13pt",
@@ -692,9 +835,11 @@
 "last_in_row": null 
 },
 "geoms": [
- "geom5_line_landscape",
-"geom6_segment_landscape",
-"geom7_point_landscape" 
+ "geom6_line_landscape",
+"geom7_point_landscape",
+"geom8_segment_landscape",
+"geom9_point_landscape",
+"geom10_text_landscape" 
 ] 
 },
 "loss": {
@@ -756,7 +901,8 @@
   0.39794,
 0.4771213,
 0.544068,
- 0.60206 
+ 0.60206,
+0.6532125 
 ] 
 ] 
 } 
@@ -782,14 +928,16 @@
 ],
 "y": [
  [
-  0.39794,
+ 0.3583494,
+ 0.39794,
 0.4375306,
 0.4771213,
 0.5105946,
 0.544068,
 0.573064,
  0.60206,
-0.6416506 
+0.6276363,
+0.6532125 
 ] 
 ] 
 } 
@@ -816,15 +964,17 @@
   0.39794,
 0.4771213,
 0.544068,
- 0.60206 
+ 0.60206,
+0.6532125 
 ],
 "ylab": [
  "2.5",
 "3.0",
 "3.5",
-"4.0" 
+"4.0",
+"4.5" 
 ],
-"yrange": [ 0.3587444, 0.6499398 ],
+"yrange": [ 0.3577644, 0.6705206 ],
 "yline": false,
 "yticks": true 
 },
@@ -849,7 +999,8 @@
  "2.5",
 "3.0",
 "3.5",
-"4.0" 
+"4.0",
+"4.5" 
 ],
 "title": "Loss vs Iteration (log scale)",
 "title_size": "13pt",
@@ -863,10 +1014,11 @@
 "last_in_row": null 
 },
 "geoms": [
- "geom8_tallrect_loss",
-"geom9_line_loss",
-"geom10_point_loss",
-"geom11_point_loss" 
+ "geom11_tallrect_loss",
+"geom12_line_loss",
+"geom13_point_loss",
+"geom14_point_loss",
+"geom15_text_loss" 
 ] 
 } 
 },
