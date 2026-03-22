@@ -39,7 +39,7 @@
  "na.rm": false,
 "na.rm": false,
 "colour": "#6A4C93",
-"size":        1 
+"linewidth":      1.5 
 },
 "types": {
  "x": "numeric",
@@ -64,7 +64,7 @@
  "na.rm": false,
 "na.rm": false,
 "colour": "#6A4C93",
-"size":        2 
+"size":        3 
 },
 "types": {
  "x": "numeric",
@@ -90,7 +90,7 @@
  "na.rm": false,
 "na.rm": false,
 "colour": "#E76F51",
-"size":        6,
+"size":        8,
 "showSelected": "iteration",
 "help_showSelected": "iteration" 
 },
@@ -126,7 +126,7 @@
 "na.rm": false,
 "na.rm": false,
 "vjust":        0,
-"size":        5,
+"size":        6,
 "colour": "#E76F51",
 "showSelected": "iteration",
 "help_showSelected": "iteration",
@@ -161,7 +161,7 @@
  "na.rm": false,
 "na.rm": false,
 "colour": "#555555",
-"size":        1 
+"linewidth":      1.5 
 },
 "types": {
  "x": "numeric",
@@ -186,8 +186,8 @@
  "na.rm": false,
 "na.rm": false,
 "colour": "#2A9D8F",
-"size":        2,
-"alpha":      0.3 
+"size":        3,
+"alpha":      0.4 
 },
 "types": {
  "x": "numeric",
@@ -214,7 +214,7 @@
 "params": {
  "arrow": [
        30,
-     0.3,
+     0.4,
 2,
 1 
 ],
@@ -222,8 +222,8 @@
 "na.rm": false,
 "na.rm": false,
 "colour": "#E76F51",
-"size":      1.2,
 "showSelected": "iteration",
+"linewidth":      1.5,
 "help_showSelected": "iteration" 
 },
 "types": {
@@ -257,7 +257,7 @@
  "na.rm": false,
 "na.rm": false,
 "colour": "#2A9D8F",
-"size":        7,
+"size":        9,
 "showSelected": "iteration",
 "help_showSelected": "iteration" 
 },
@@ -293,7 +293,7 @@
 "na.rm": false,
 "na.rm": false,
 "vjust":        0,
-"size":        5,
+"size":        6,
 "colour": "#2A9D8F",
 "showSelected": "iteration",
 "help_showSelected": "iteration",
@@ -356,7 +356,7 @@
  "na.rm": false,
 "na.rm": false,
 "colour": "#264653",
-"size":        1 
+"linewidth":      1.5 
 },
 "types": {
  "x": "numeric",
@@ -381,7 +381,7 @@
  "na.rm": false,
 "na.rm": false,
 "colour": "#264653",
-"size":        2 
+"size":        3 
 },
 "types": {
  "x": "numeric",
@@ -407,7 +407,7 @@
  "na.rm": false,
 "na.rm": false,
 "colour": "#E9C46A",
-"size":        6,
+"size":        8,
 "showSelected": "iteration",
 "help_showSelected": "iteration" 
 },
@@ -443,7 +443,7 @@
 "na.rm": false,
 "na.rm": false,
 "vjust":        0,
-"size":        5,
+"size":        6,
 "colour": "#264653",
 "showSelected": "iteration",
 "help_showSelected": "iteration",
@@ -628,12 +628,12 @@
 },
 "xtitle": "Iteration",
 "strip_text_xsize": "12pt",
-"xsize": "12pt",
+"xsize": "11pt",
 "xangle":        0,
 "xanchor": "middle",
 "ytitle": "|Gradient|",
 "strip_text_ysize": "12pt",
-"ysize": "12pt",
+"ysize": "11pt",
 "yangle":        0,
 "yanchor": "end",
 "xlabs": [
@@ -650,7 +650,7 @@
 "6" 
 ],
 "title": "|Gradient| vs Iteration",
-"title_size": "13pt",
+"title_size": "15pt",
 "options": {
  "width":      400,
 "height":      400 
@@ -803,12 +803,12 @@
 },
 "xtitle": "x (parameter value)",
 "strip_text_xsize": "12pt",
-"xsize": "12pt",
+"xsize": "11pt",
 "xangle":        0,
 "xanchor": "middle",
 "ytitle": "Loss f(x)",
 "strip_text_ysize": "12pt",
-"ysize": "12pt",
+"ysize": "11pt",
 "yangle":        0,
 "yanchor": "end",
 "xlabs": [
@@ -825,7 +825,7 @@
 "7.5" 
 ],
 "title": "Loss Landscape",
-"title_size": "13pt",
+"title_size": "15pt",
 "options": {
  "width":      400,
 "height":      400 
@@ -976,12 +976,12 @@
 },
 "xtitle": "Iteration",
 "strip_text_xsize": "12pt",
-"xsize": "12pt",
+"xsize": "11pt",
 "xangle":        0,
 "xanchor": "middle",
 "ytitle": "Loss f(x) - log scale",
 "strip_text_ysize": "12pt",
-"ysize": "12pt",
+"ysize": "11pt",
 "yangle":        0,
 "yanchor": "end",
 "xlabs": [
@@ -998,7 +998,7 @@
 "4.0" 
 ],
 "title": "Loss vs Iteration (log scale)",
-"title_size": "13pt",
+"title_size": "15pt",
 "options": {
  "width":      400,
 "height":      400 
