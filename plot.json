@@ -1,34 +1,105 @@
 {
  "geoms": {
- "geom1_point_student": {
- "geom": "point",
-"classed": "geom1_point_student",
+ "geom1_tallrect_gradient": {
+ "geom": "tallrect",
+"classed": "geom1_tallrect_gradient",
 "aes": {
- "x": "math",
-"y": "science",
-"colour": "grade",
-"clickSelects": "grade",
-"showSelected1": "grade" 
+ "xmin": "iteration - 0.5",
+"xmax": "iteration + 0.5",
+"clickSelects": "iteration" 
 },
 "params": {
  "na.rm": false,
 "na.rm": false,
-"size":        6,
-"alpha":      0.8,
-"clickSelects": "grade",
-"showSelected": "grade",
-"help_clickSelects": "grade",
-"help_showSelected": "grade" 
+"alpha":      0.3,
+"clickSelects": "iteration",
+"help_clickSelects": "iteration" 
 },
 "types": {
- "colour": "rgb",
-"x": "numeric",
-"y": "numeric",
-"clickSelects": "linetype",
-"showSelected1": "linetype",
+ "xmin": "numeric",
+"xmax": "numeric",
+"clickSelects": "integer",
 "PANEL": "integer",
-"group": "character",
-"fill": "rgb" 
+"group": "character" 
+},
+"chunk_order": [],
+"nest_order": [],
+"subset_order": [],
+"chunks": 1,
+"total": 1 
+},
+"geom2_line_gradient": {
+ "geom": "line",
+"classed": "geom2_line_gradient",
+"aes": {
+ "x": "iteration",
+"y": "abs_gradient" 
+},
+"params": {
+ "na.rm": false,
+"na.rm": false,
+"colour": "#6A4C93",
+"size":        1 
+},
+"types": {
+ "x": "numeric",
+"y": "numeric",
+"PANEL": "integer",
+"group": "character" 
+},
+"chunk_order": [],
+"nest_order": [],
+"subset_order": [],
+"chunks": 1,
+"total": 1 
+},
+"geom3_point_gradient": {
+ "geom": "point",
+"classed": "geom3_point_gradient",
+"aes": {
+ "x": "iteration",
+"y": "abs_gradient" 
+},
+"params": {
+ "na.rm": false,
+"na.rm": false,
+"colour": "#6A4C93",
+"size":        2 
+},
+"types": {
+ "x": "numeric",
+"y": "numeric",
+"PANEL": "integer",
+"group": "character" 
+},
+"chunk_order": [],
+"nest_order": [],
+"subset_order": [],
+"chunks": 1,
+"total": 1 
+},
+"geom4_point_gradient": {
+ "geom": "point",
+"classed": "geom4_point_gradient",
+"aes": {
+ "x": "iteration",
+"y": "abs_gradient",
+"showSelected1": "iteration" 
+},
+"params": {
+ "na.rm": false,
+"na.rm": false,
+"colour": "#E76F51",
+"size":        5,
+"showSelected": "iteration",
+"help_showSelected": "iteration" 
+},
+"types": {
+ "x": "numeric",
+"y": "numeric",
+"showSelected1": "integer",
+"PANEL": "integer",
+"group": "character" 
 },
 "chunk_order": [],
 "nest_order": [
@@ -40,9 +111,9 @@
 "chunks": 1,
 "total": 1 
 },
-"geom2_line_landscape": {
+"geom5_line_landscape": {
  "geom": "line",
-"classed": "geom2_line_landscape",
+"classed": "geom5_line_landscape",
 "aes": {
  "x": "x",
 "y": "loss" 
@@ -65,9 +136,9 @@
 "chunks": 1,
 "total": 1 
 },
-"geom3_segment_landscape": {
+"geom6_segment_landscape": {
  "geom": "segment",
-"classed": "geom3_segment_landscape",
+"classed": "geom6_segment_landscape",
 "aes": {
  "x": "x_start",
 "y": "y_start",
@@ -109,9 +180,9 @@
 "chunks": 1,
 "total": 1 
 },
-"geom4_point_landscape": {
+"geom7_point_landscape": {
  "geom": "point",
-"classed": "geom4_point_landscape",
+"classed": "geom7_point_landscape",
 "aes": {
  "x": "x",
 "y": "loss",
@@ -142,9 +213,9 @@
 "chunks": 1,
 "total": 1 
 },
-"geom5_tallrect_loss": {
+"geom8_tallrect_loss": {
  "geom": "tallrect",
-"classed": "geom5_tallrect_loss",
+"classed": "geom8_tallrect_loss",
 "aes": {
  "xmin": "iteration - 0.5",
 "xmax": "iteration + 0.5",
@@ -170,9 +241,9 @@
 "chunks": 1,
 "total": 1 
 },
-"geom6_line_loss": {
+"geom9_line_loss": {
  "geom": "line",
-"classed": "geom6_line_loss",
+"classed": "geom9_line_loss",
 "aes": {
  "x": "iteration",
 "y": "loss" 
@@ -195,9 +266,9 @@
 "chunks": 1,
 "total": 1 
 },
-"geom7_point_loss": {
+"geom10_point_loss": {
  "geom": "point",
-"classed": "geom7_point_loss",
+"classed": "geom10_point_loss",
 "aes": {
  "x": "iteration",
 "y": "loss",
@@ -235,75 +306,27 @@
 "sequence": [ "0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20" ] 
 },
 "selectors": {
- "grade": {
- "type": "multiple",
-"legend": true,
-"is.variable.value": false,
-"clickSelects": true,
-"showSelected": true,
-"selected": [ "B", "A", "C" ],
-"levels": [ "B", "A", "C" ],
-"update": [
- "geom1_point_student" 
-] 
-},
-"iteration": {
+ "iteration": {
  "is.variable.value": false,
 "type": "single",
-"showSelected": true,
 "clickSelects": true,
+"showSelected": true,
 "selected": "0",
-"levels": [ "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "0" ],
+"levels": [ "0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20" ],
 "update": [
- "geom3_segment_landscape",
-"geom4_point_landscape",
-"geom5_tallrect_loss",
-"geom7_point_loss" 
+ "geom1_tallrect_gradient",
+"geom4_point_gradient",
+"geom6_segment_landscape",
+"geom7_point_landscape",
+"geom8_tallrect_loss",
+"geom10_point_loss" 
 ] 
 } 
 },
 "plots": {
- "student": {
+ "gradient": {
  "panel_margin_lines":     0.27,
-"legend": {
- "grade": {
- "guide": "legend",
-"geoms": "point",
-"title": "grade",
-"class": "grade",
-"selector": "grade",
-"is_discrete": true,
-"legend_type": "colour",
-"text_size": "9.6pt",
-"title_size": "12pt",
-"entries": [
- {
- "pointcolour": "#F8766D",
-"pointshape":       19,
-"pointsize":        6,
-"pointalpha":      0.8,
-"pointstroke":      0.5,
-"label": "A" 
-},
-{
- "pointcolour": "#00BA38",
-"pointshape":       19,
-"pointsize":        6,
-"pointalpha":      0.8,
-"pointstroke":      0.5,
-"label": "B" 
-},
-{
- "pointcolour": "#619CFF",
-"pointshape":       19,
-"pointsize":        6,
-"pointalpha":      0.8,
-"pointstroke":      0.5,
-"label": "C" 
-} 
-] 
-} 
-},
+"legend": {},
 "strips": {
  "top": [
  "" 
@@ -348,17 +371,19 @@
 "loc": {
  "x": [
  [
-       60,
-      70,
-      80,
-      90 
+        0,
+       5,
+      10,
+      15,
+      20 
 ] 
 ],
 "y": [
  [
-       70,
-      80,
-      90 
+        0,
+       2,
+       4,
+       6 
 ] 
 ] 
 } 
@@ -371,82 +396,88 @@
 "loc": {
  "x": [
  [
-       55,
-      60,
-      65,
-      70,
-      75,
-      80,
-      85,
-      90,
-      95 
+        0,
+     2.5,
+       5,
+     7.5,
+      10,
+    12.5,
+      15,
+    17.5,
+      20 
 ] 
 ],
 "y": [
  [
-       65,
-      70,
-      75,
-      80,
-      85,
-      90,
-      95 
+        0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6 
 ] 
 ] 
 } 
 },
 "axis1": {
  "x": [
-       60,
-      70,
-      80,
-      90 
+        0,
+       5,
+      10,
+      15,
+      20 
 ],
 "xlab": [
- "60",
-"70",
-"80",
-"90" 
+ "0",
+"5",
+"10",
+"15",
+"20" 
 ],
-"xrange": [       53,       97 ],
+"xrange": [    -1.55,    21.55 ],
 "xline": false,
 "xticks": true,
 "y": [
-       70,
-      80,
-      90 
+        0,
+       2,
+       4,
+       6 
 ],
 "ylab": [
- "70",
-"80",
-"90" 
+ "0",
+"2",
+"4",
+"6" 
 ],
-"yrange": [     63.4,     98.6 ],
+"yrange": [ -0.3067323, 6.441381 ],
 "yline": false,
 "yticks": true 
 },
-"xtitle": "Math Score",
+"xtitle": "Iteration",
 "strip_text_xsize": "12pt",
 "xsize": "12pt",
 "xangle":        0,
 "xanchor": "middle",
-"ytitle": "Science Score",
+"ytitle": "|Gradient|",
 "strip_text_ysize": "12pt",
 "ysize": "12pt",
 "yangle":        0,
 "yanchor": "end",
 "xlabs": [
- "60",
-"70",
-"80",
-"90" 
+ "0",
+"5",
+"10",
+"15",
+"20" 
 ],
 "ylabs": [
- "70",
-"80",
-"90" 
+ "0",
+"2",
+"4",
+"6" 
 ],
-"title": "Plot 1: Student Marks (click a dot to filter grade)",
+"title": "Plot 1: |Gradient| vs Iteration (click to select step)",
 "title_size": "14.4pt",
 "options": {
  "width":      400,
@@ -458,7 +489,10 @@
 "last_in_row": null 
 },
 "geoms": [
- "geom1_point_student" 
+ "geom1_tallrect_gradient",
+"geom2_line_gradient",
+"geom3_point_gradient",
+"geom4_point_gradient" 
 ] 
 },
 "landscape": {
@@ -508,18 +542,20 @@
 "loc": {
  "x": [
  [
-       -2,
+       -1,
        0,
-       2 
+       1,
+       2,
+       3 
 ] 
 ],
 "y": [
  [
         0,
-     2.5,
-       5,
-     7.5,
-      10 
+       2,
+       4,
+       6,
+       8 
 ] 
 ] 
 } 
@@ -532,60 +568,66 @@
 "loc": {
  "x": [
  [
-       -3,
-      -2,
-      -1,
+       -1,
+    -0.5,
        0,
+     0.5,
        1,
+     1.5,
        2,
+     2.5,
        3 
 ] 
 ],
 "y": [
  [
-    -1.25,
+       -1,
        0,
-    1.25,
-     2.5,
-    3.75,
+       1,
+       2,
+       3,
+       4,
        5,
-    6.25,
-     7.5,
-    8.75,
-      10 
+       6,
+       7,
+       8 
 ] 
 ] 
 } 
 },
 "axis1": {
  "x": [
-       -2,
+       -1,
        0,
-       2 
+       1,
+       2,
+       3 
 ],
 "xlab": [
- "-2",
+ "-1",
 "0",
-"2" 
+"1",
+"2",
+"3" 
 ],
-"xrange": [     -3.3,      3.3 ],
+"xrange": [     -1.2,      3.2 ],
 "xline": false,
 "xticks": true,
 "y": [
         0,
-     2.5,
-       5,
-     7.5,
-      10 
+       2,
+       4,
+       6,
+       8 
 ],
 "ylab": [
- "0.0",
-"2.5",
-"5.0",
-"7.5",
-"10.0" 
+ "0",
+"2",
+"4",
+"6",
+"8" 
 ],
-"yrange": [ -2.060483, 10.11213 ],
+"yrange": [   -1.975,    8.475 ],
 "yline": false,
 "yticks": true 
 },
@@ -600,18 +642,20 @@
 "yangle":        0,
 "yanchor": "end",
 "xlabs": [
- "-2",
+ "-1",
 "0",
-"2" 
+"1",
+"2",
+"3" 
 ],
 "ylabs": [
- "0.0",
-"2.5",
-"5.0",
-"7.5",
-"10.0" 
+ "0",
+"2",
+"4",
+"6",
+"8" 
 ],
-"title": "Plot 2: Gradient Descent Loss Landscape",
+"title": "Plot 2: Loss Landscape",
 "title_size": "14.4pt",
 "options": {
  "width":      400,
@@ -623,9 +667,9 @@
 "last_in_row": null 
 },
 "geoms": [
- "geom2_line_landscape",
-"geom3_segment_landscape",
-"geom4_point_landscape" 
+ "geom5_line_landscape",
+"geom6_segment_landscape",
+"geom7_point_landscape" 
 ] 
 },
 "loss": {
@@ -684,10 +728,11 @@
 ],
 "y": [
  [
-      2.5,
-       3,
-     3.5,
-       4 
+        0,
+       2,
+       4,
+       6,
+       8 
 ] 
 ] 
 } 
@@ -713,14 +758,16 @@
 ],
 "y": [
  [
-      2.5,
-    2.75,
+       -1,
+       0,
+       1,
+       2,
        3,
-    3.25,
-     3.5,
-    3.75,
        4,
-    4.25 
+       5,
+       6,
+       7,
+       8 
 ] 
 ] 
 } 
@@ -744,18 +791,20 @@
 "xline": false,
 "xticks": true,
 "y": [
-      2.5,
-       3,
-     3.5,
-       4 
+        0,
+       2,
+       4,
+       6,
+       8 
 ],
 "ylab": [
- "2.5",
-"3.0",
-"3.5",
-"4.0" 
+ "0",
+"2",
+"4",
+"6",
+"8" 
 ],
-"yrange": [ 2.256084, 4.431012 ],
+"yrange": [   -1.975,    8.475 ],
 "yline": false,
 "yticks": true 
 },
@@ -777,10 +826,11 @@
 "20" 
 ],
 "ylabs": [
- "2.5",
-"3.0",
-"3.5",
-"4.0" 
+ "0",
+"2",
+"4",
+"6",
+"8" 
 ],
 "title": "Plot 3: Loss vs Iteration (click a bar to select step)",
 "title_size": "14.4pt",
@@ -794,12 +844,12 @@
 "last_in_row": null 
 },
 "geoms": [
- "geom5_tallrect_loss",
-"geom6_line_loss",
-"geom7_point_loss" 
+ "geom8_tallrect_loss",
+"geom9_line_loss",
+"geom10_point_loss" 
 ] 
 } 
 },
 "source": "https://github.com/Nishita-shah1/animint/blob/main/figure-combined.R",
-"title": "Student Marks + Gradient Descent Visualization" 
+"title": "Gradient Descent Visualization" 
 }
