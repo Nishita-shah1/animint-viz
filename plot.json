@@ -115,8 +115,8 @@
  "geom": "text",
 "classed": "geom5_text_gradient",
 "aes": {
- "x": "7",
-"y": "6.5",
+ "x": "8",
+"y": "6",
 "label": "text_grad",
 "showSelected1": "iteration" 
 },
@@ -125,8 +125,8 @@
 "check_overlap": false,
 "na.rm": false,
 "na.rm": false,
-"size":        7,
-"fontface": "bold",
+"vjust":        0,
+"size":       15,
 "colour": "#E76F51",
 "showSelected": "iteration",
 "help_showSelected": "iteration",
@@ -282,7 +282,7 @@
  "geom": "text",
 "classed": "geom10_text_landscape",
 "aes": {
- "x": "-0.9",
+ "x": "-1",
 "y": "8.5",
 "label": "text_land",
 "showSelected1": "iteration" 
@@ -292,8 +292,8 @@
 "check_overlap": false,
 "na.rm": false,
 "na.rm": false,
-"size":        7,
-"fontface": "bold",
+"vjust":        0,
+"size":        5,
 "colour": "#2A9D8F",
 "showSelected": "iteration",
 "help_showSelected": "iteration",
@@ -432,8 +432,8 @@
  "geom": "text",
 "classed": "geom15_text_loss",
 "aes": {
- "x": "7",
-"y": "7",
+ "x": "8",
+"y": "4",
 "label": "text_loss",
 "showSelected1": "iteration" 
 },
@@ -442,8 +442,8 @@
 "check_overlap": false,
 "na.rm": false,
 "na.rm": false,
-"size":        7,
-"fontface": "bold",
+"vjust":        0,
+"size":        5,
 "colour": "#264653",
 "showSelected": "iteration",
 "help_showSelected": "iteration",
@@ -622,7 +622,7 @@
 "4",
 "6" 
 ],
-"yrange": [   -0.375,    7.875 ],
+"yrange": [    -0.35,     7.35 ],
 "yline": false,
 "yticks": true 
 },
@@ -650,7 +650,7 @@
 "6" 
 ],
 "title": "|Gradient| vs Iteration",
-"title_size": "14pt",
+"title_size": "13pt",
 "options": {
  "width":      400,
 "height":      400 
@@ -727,8 +727,7 @@
         0,
      2.5,
        5,
-     7.5,
-      10 
+     7.5 
 ] 
 ] 
 } 
@@ -763,8 +762,7 @@
        5,
     6.25,
      7.5,
-    8.75,
-      10 
+    8.75 
 ] 
 ] 
 } 
@@ -791,17 +789,15 @@
         0,
      2.5,
        5,
-     7.5,
-      10 
+     7.5 
 ],
 "ylab": [
  "0.0",
 "2.5",
 "5.0",
-"7.5",
-"10.0" 
+"7.5" 
 ],
-"yrange": [    -2.05,    10.05 ],
+"yrange": [   -2.025,    9.525 ],
 "yline": false,
 "yticks": true 
 },
@@ -826,11 +822,10 @@
  "0.0",
 "2.5",
 "5.0",
-"7.5",
-"10.0" 
+"7.5" 
 ],
 "title": "Loss Landscape",
-"title_size": "14pt",
+"title_size": "13pt",
 "options": {
  "width":      400,
 "height":      400 
@@ -904,9 +899,10 @@
 ],
 "y": [
  [
- 0.4771213,
- 0.69897,
-0.845098 
+  0.39794,
+0.4771213,
+0.544068,
+ 0.60206 
 ] 
 ] 
 } 
@@ -932,12 +928,14 @@
 ],
 "y": [
  [
- 0.3661969,
+  0.39794,
+0.4375306,
 0.4771213,
-0.5880456,
- 0.69897,
-0.772034,
-0.845098 
+0.5105946,
+0.544068,
+0.573064,
+ 0.60206,
+0.6416506 
 ] 
 ] 
 } 
@@ -961,16 +959,18 @@
 "xline": false,
 "xticks": true,
 "y": [
- 0.4771213,
- 0.69897,
-0.845098 
+  0.39794,
+0.4771213,
+0.544068,
+ 0.60206 
 ],
 "ylab": [
- "3",
-"5",
-"7" 
+ "2.5",
+"3.0",
+"3.5",
+"4.0" 
 ],
-"yrange": [ 0.3483247, 0.8687539 ],
+"yrange": [ 0.3587444, 0.6499398 ],
 "yline": false,
 "yticks": true 
 },
@@ -992,12 +992,13 @@
 "20" 
 ],
 "ylabs": [
- "3",
-"5",
-"7" 
+ "2.5",
+"3.0",
+"3.5",
+"4.0" 
 ],
 "title": "Loss vs Iteration (log scale)",
-"title_size": "14pt",
+"title_size": "13pt",
 "options": {
  "width":      400,
 "height":      400 
