@@ -1,0 +1,64 @@
+x	y	label	showSelected1
+2.5	7.5	"Iteration: 0
+x = 2.5
+loss = 4.3322"	0
+2.5	7.5	"Iteration: 1
+x = 1.8865
+loss = 2.3783"	1
+2.5	7.5	"Iteration: 2
+x = 1.8321
+loss = 2.3583"	2
+2.5	7.5	"Iteration: 3
+x = 1.8123
+loss = 2.3555"	3
+2.5	7.5	"Iteration: 4
+x = 1.8041
+loss = 2.3551"	4
+2.5	7.5	"Iteration: 5
+x = 1.8005
+loss = 2.355"	5
+2.5	7.5	"Iteration: 6
+x = 1.7989
+loss = 2.3549"	6
+2.5	7.5	"Iteration: 7
+x = 1.7982
+loss = 2.3549"	7
+2.5	7.5	"Iteration: 8
+x = 1.7979
+loss = 2.3549"	8
+2.5	7.5	"Iteration: 9
+x = 1.7978
+loss = 2.3549"	9
+2.5	7.5	"Iteration: 10
+x = 1.7977
+loss = 2.3549"	10
+2.5	7.5	"Iteration: 11
+x = 1.7977
+loss = 2.3549"	11
+2.5	7.5	"Iteration: 12
+x = 1.7977
+loss = 2.3549"	12
+2.5	7.5	"Iteration: 13
+x = 1.7977
+loss = 2.3549"	13
+2.5	7.5	"Iteration: 14
+x = 1.7977
+loss = 2.3549"	14
+2.5	7.5	"Iteration: 15
+x = 1.7977
+loss = 2.3549"	15
+2.5	7.5	"Iteration: 16
+x = 1.7977
+loss = 2.3549"	16
+2.5	7.5	"Iteration: 17
+x = 1.7977
+loss = 2.3549"	17
+2.5	7.5	"Iteration: 18
+x = 1.7977
+loss = 2.3549"	18
+2.5	7.5	"Iteration: 19
+x = 1.7977
+loss = 2.3549"	19
+2.5	7.5	"Iteration: 20
+x = 1.7977
+loss = 2.3549"	20

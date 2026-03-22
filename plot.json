@@ -111,26 +111,29 @@
 "chunks": 1,
 "total": 1 
 },
-"geom5_text_gradient": {
- "geom": "text",
-"classed": "geom5_text_gradient",
+"geom5_labelaligned_gradient": {
+ "geom": "label_aligned",
+"classed": "geom5_labelaligned_gradient",
 "aes": {
- "x": "iteration",
+ "x": "x_grad_label",
 "y": "y_grad_label",
 "label": "text_grad",
 "showSelected1": "iteration" 
 },
 "params": {
- "parse": false,
-"check_overlap": false,
+ "label_r":     0.15,
+"alignment": "vertical",
+"min_distance":      0.1,
+"background_rect": true,
 "na.rm": false,
 "na.rm": false,
-"vjust":        0,
-"size":      3.5,
+"hjust":        1,
+"vjust":        1,
+"size":        5,
 "colour": "#E76F51",
+"fill": "#FFFFFF",
 "showSelected": "iteration",
-"help_showSelected": "iteration",
-"anchor": "middle" 
+"help_showSelected": "iteration" 
 },
 "types": {
  "x": "numeric",
@@ -278,26 +281,29 @@
 "chunks": 1,
 "total": 1 
 },
-"geom10_text_landscape": {
- "geom": "text",
-"classed": "geom10_text_landscape",
+"geom10_labelaligned_landscape": {
+ "geom": "label_aligned",
+"classed": "geom10_labelaligned_landscape",
 "aes": {
- "x": "x_label",
-"y": "y_loss_label",
+ "x": "x_land_label",
+"y": "y_land_label",
 "label": "text_land",
 "showSelected1": "iteration" 
 },
 "params": {
- "parse": false,
-"check_overlap": false,
+ "label_r":     0.15,
+"alignment": "vertical",
+"min_distance":      0.1,
+"background_rect": true,
 "na.rm": false,
 "na.rm": false,
-"vjust":        0,
-"size":      3.5,
+"hjust":        1,
+"vjust":        1,
+"size":        5,
 "colour": "#2A9D8F",
+"fill": "#FFFFFF",
 "showSelected": "iteration",
-"help_showSelected": "iteration",
-"anchor": "start" 
+"help_showSelected": "iteration" 
 },
 "types": {
  "x": "numeric",
@@ -359,8 +365,8 @@
 "size":        1 
 },
 "types": {
- "y": "numeric",
-"x": "numeric",
+ "x": "numeric",
+"y": "numeric",
 "PANEL": "integer",
 "group": "character" 
 },
@@ -384,8 +390,8 @@
 "size":        2 
 },
 "types": {
- "y": "numeric",
-"x": "numeric",
+ "x": "numeric",
+"y": "numeric",
 "PANEL": "integer",
 "group": "character" 
 },
@@ -412,8 +418,8 @@
 "help_showSelected": "iteration" 
 },
 "types": {
- "y": "numeric",
-"x": "numeric",
+ "x": "numeric",
+"y": "numeric",
 "showSelected1": "integer",
 "PANEL": "integer",
 "group": "character" 
@@ -428,30 +434,33 @@
 "chunks": 1,
 "total": 1 
 },
-"geom15_text_loss": {
- "geom": "text",
-"classed": "geom15_text_loss",
+"geom15_labelaligned_loss": {
+ "geom": "label_aligned",
+"classed": "geom15_labelaligned_loss",
 "aes": {
- "x": "iteration",
+ "x": "x_loss_label",
 "y": "y_loss_label",
 "label": "text_loss",
 "showSelected1": "iteration" 
 },
 "params": {
- "parse": false,
-"check_overlap": false,
+ "label_r":     0.15,
+"alignment": "vertical",
+"min_distance":      0.1,
+"background_rect": true,
 "na.rm": false,
 "na.rm": false,
-"vjust":        0,
-"size":      3.5,
-"colour": "#E9C46A",
+"hjust":        1,
+"vjust":        1,
+"size":        5,
+"colour": "#264653",
+"fill": "#FFFFFF",
 "showSelected": "iteration",
-"help_showSelected": "iteration",
-"anchor": "middle" 
+"help_showSelected": "iteration" 
 },
 "types": {
- "y": "numeric",
-"x": "numeric",
+ "x": "numeric",
+"y": "numeric",
 "label": "character",
 "showSelected1": "integer",
 "PANEL": "integer",
@@ -484,13 +493,13 @@
 "update": [
  "geom1_tallrect_gradient",
 "geom4_point_gradient",
-"geom5_text_gradient",
+"geom5_labelaligned_gradient",
 "geom8_segment_landscape",
 "geom9_point_landscape",
-"geom10_text_landscape",
+"geom10_labelaligned_landscape",
 "geom11_tallrect_loss",
 "geom14_point_loss",
-"geom15_text_loss" 
+"geom15_labelaligned_loss" 
 ] 
 } 
 },
@@ -586,7 +595,8 @@
        3,
        4,
        5,
-       6 
+       6,
+       7 
 ] 
 ] 
 } 
@@ -606,7 +616,7 @@
 "15",
 "20" 
 ],
-"xrange": [    -1.55,    21.55 ],
+"xrange": [       -1,       21 ],
 "xline": false,
 "xticks": true,
 "y": [
@@ -621,7 +631,7 @@
 "4",
 "6" 
 ],
-"yrange": [ -0.3167323, 6.651381 ],
+"yrange": [    -0.35,     7.35 ],
 "yline": false,
 "yticks": true 
 },
@@ -664,7 +674,7 @@
 "geom2_line_gradient",
 "geom3_point_gradient",
 "geom4_point_gradient",
-"geom5_text_gradient" 
+"geom5_labelaligned_gradient" 
 ] 
 },
 "landscape": {
@@ -839,7 +849,7 @@
 "geom7_point_landscape",
 "geom8_segment_landscape",
 "geom9_point_landscape",
-"geom10_text_landscape" 
+"geom10_labelaligned_landscape" 
 ] 
 },
 "loss": {
@@ -901,8 +911,7 @@
   0.39794,
 0.4771213,
 0.544068,
- 0.60206,
-0.6532125 
+ 0.60206 
 ] 
 ] 
 } 
@@ -928,16 +937,14 @@
 ],
 "y": [
  [
- 0.3583494,
- 0.39794,
+  0.39794,
 0.4375306,
 0.4771213,
 0.5105946,
 0.544068,
 0.573064,
  0.60206,
-0.6276363,
-0.6532125 
+0.6416506 
 ] 
 ] 
 } 
@@ -957,24 +964,22 @@
 "15",
 "20" 
 ],
-"xrange": [    -1.55,    21.55 ],
+"xrange": [       -1,       21 ],
 "xline": false,
 "xticks": true,
 "y": [
   0.39794,
 0.4771213,
 0.544068,
- 0.60206,
-0.6532125 
+ 0.60206 
 ],
 "ylab": [
  "2.5",
 "3.0",
 "3.5",
-"4.0",
-"4.5" 
+"4.0" 
 ],
-"yrange": [ 0.3577644, 0.6705206 ],
+"yrange": [ 0.3587444, 0.6499398 ],
 "yline": false,
 "yticks": true 
 },
@@ -999,8 +1004,7 @@
  "2.5",
 "3.0",
 "3.5",
-"4.0",
-"4.5" 
+"4.0" 
 ],
 "title": "Loss vs Iteration (log scale)",
 "title_size": "13pt",
@@ -1018,7 +1022,7 @@
 "geom12_line_loss",
 "geom13_point_loss",
 "geom14_point_loss",
-"geom15_text_loss" 
+"geom15_labelaligned_loss" 
 ] 
 } 
 },
