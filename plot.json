@@ -111,29 +111,26 @@
 "chunks": 1,
 "total": 1 
 },
-"geom5_labelaligned_gradient": {
- "geom": "label_aligned",
-"classed": "geom5_labelaligned_gradient",
+"geom5_text_gradient": {
+ "geom": "text",
+"classed": "geom5_text_gradient",
 "aes": {
- "x": "x_grad_label",
-"y": "y_grad_label",
+ "x": "8",
+"y": "6",
 "label": "text_grad",
 "showSelected1": "iteration" 
 },
 "params": {
- "label_r":     0.15,
-"alignment": "vertical",
-"min_distance":      0.1,
-"background_rect": true,
+ "parse": false,
+"check_overlap": false,
 "na.rm": false,
 "na.rm": false,
-"hjust":        1,
-"vjust":        1,
+"vjust":        0,
 "size":        5,
 "colour": "#E76F51",
-"fill": "#FFFFFF",
 "showSelected": "iteration",
-"help_showSelected": "iteration" 
+"help_showSelected": "iteration",
+"anchor": "start" 
 },
 "types": {
  "x": "numeric",
@@ -281,29 +278,26 @@
 "chunks": 1,
 "total": 1 
 },
-"geom10_labelaligned_landscape": {
- "geom": "label_aligned",
-"classed": "geom10_labelaligned_landscape",
+"geom10_text_landscape": {
+ "geom": "text",
+"classed": "geom10_text_landscape",
 "aes": {
- "x": "x_land_label",
-"y": "y_land_label",
+ "x": "-1",
+"y": "8.5",
 "label": "text_land",
 "showSelected1": "iteration" 
 },
 "params": {
- "label_r":     0.15,
-"alignment": "vertical",
-"min_distance":      0.1,
-"background_rect": true,
+ "parse": false,
+"check_overlap": false,
 "na.rm": false,
 "na.rm": false,
-"hjust":        1,
-"vjust":        1,
+"vjust":        0,
 "size":        5,
 "colour": "#2A9D8F",
-"fill": "#FFFFFF",
 "showSelected": "iteration",
-"help_showSelected": "iteration" 
+"help_showSelected": "iteration",
+"anchor": "start" 
 },
 "types": {
  "x": "numeric",
@@ -434,29 +428,26 @@
 "chunks": 1,
 "total": 1 
 },
-"geom15_labelaligned_loss": {
- "geom": "label_aligned",
-"classed": "geom15_labelaligned_loss",
+"geom15_text_loss": {
+ "geom": "text",
+"classed": "geom15_text_loss",
 "aes": {
- "x": "x_loss_label",
-"y": "y_loss_label",
+ "x": "8",
+"y": "4",
 "label": "text_loss",
 "showSelected1": "iteration" 
 },
 "params": {
- "label_r":     0.15,
-"alignment": "vertical",
-"min_distance":      0.1,
-"background_rect": true,
+ "parse": false,
+"check_overlap": false,
 "na.rm": false,
 "na.rm": false,
-"hjust":        1,
-"vjust":        1,
+"vjust":        0,
 "size":        5,
 "colour": "#264653",
-"fill": "#FFFFFF",
 "showSelected": "iteration",
-"help_showSelected": "iteration" 
+"help_showSelected": "iteration",
+"anchor": "start" 
 },
 "types": {
  "x": "numeric",
@@ -493,13 +484,13 @@
 "update": [
  "geom1_tallrect_gradient",
 "geom4_point_gradient",
-"geom5_labelaligned_gradient",
+"geom5_text_gradient",
 "geom8_segment_landscape",
 "geom9_point_landscape",
-"geom10_labelaligned_landscape",
+"geom10_text_landscape",
 "geom11_tallrect_loss",
 "geom14_point_loss",
-"geom15_labelaligned_loss" 
+"geom15_text_loss" 
 ] 
 } 
 },
@@ -674,7 +665,7 @@
 "geom2_line_gradient",
 "geom3_point_gradient",
 "geom4_point_gradient",
-"geom5_labelaligned_gradient" 
+"geom5_text_gradient" 
 ] 
 },
 "landscape": {
@@ -849,7 +840,7 @@
 "geom7_point_landscape",
 "geom8_segment_landscape",
 "geom9_point_landscape",
-"geom10_labelaligned_landscape" 
+"geom10_text_landscape" 
 ] 
 },
 "loss": {
@@ -1022,7 +1013,7 @@
 "geom12_line_loss",
 "geom13_point_loss",
 "geom14_point_loss",
-"geom15_labelaligned_loss" 
+"geom15_text_loss" 
 ] 
 } 
 },
